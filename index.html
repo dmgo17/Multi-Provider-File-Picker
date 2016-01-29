@@ -8,7 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="libs/bootstrap-3.3.6/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,47 +19,34 @@
     <![endif]-->
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Multi-Provider Storage</a>
-            <ul class="nav navbar-nav"> 
-                <li class="active"><a href="#">One Drive</a></li> 
-                <li><a href="#">Google Drive</a></li> 
-                <li><a href="#">DropBox</a></li> </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="jumbotron">
-      <div class="container">
-        <h2>Office 365 Samples</h2>
-        <p>Select a provider on the top menu and see how easy it is to retrieve your files from them.</p>
-      </div>
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <button id="get-token-button" onclick="tokenFetcher.getToken()" type="button" class="btn btn-primary">Get Token</button>
-                <pre id="get-token-container" style="display: none;">
-                    <code id="get-token-response"></code>
-                </pre>
+            <div class="col-md-8 col-md-offset-2" style="background-color:#eee">
+                <h2>Multi-Provider File Picker</h2>
+                <p>Select a provider from those below.</p>
             </div>
         </div>
         <div class="row">
-            <div id="result"></div>                        
+            <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#094ab2; min-height:300px">
+                <button id="get-token-button" onclick="tokenFetcher.getToken()" class="btn btn-default" type="button" style="background-image:url('logos/onedrive-logo.jpg'); height:76px; width:234px; margin:100px"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#FFD04B; min-height:300px">
+                <button id="google-picker-btn" onclick="getPicker()" type="button" class="btn btn-default" style="background-image:url('logos/google-drive-logo.jpg'); height:80px; width:234px; margin:100px"/>
+                <div id="result"></div>  
+            </div>
         </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!--local js files-->
     <script src="js/microsoft-file-picker.js"></script>
     <script src="js/google-file-picker.js"></script>
     
