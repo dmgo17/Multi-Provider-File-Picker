@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Multi-Provider File Picker</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
@@ -23,20 +23,29 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="background-color:#eee">
                 <h2>Multi-Provider File Picker</h2>
-                <p>Select a provider from those below.</p>
+                <p>Select a provider.</p>
+                <p id="result"></p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#094ab2; min-height:300px">
-                <button id="get-token-button" onclick="tokenFetcher.getToken()" class="btn btn-default" type="button" style="background-image:url('logos/onedrive-logo.jpg'); height:76px; width:234px; margin:100px"/>
+                <button id="get-token-button" onclick="tokenFetcher.getToken()" class="btn btn-default" type="button" 
+                    style="background-image:url('logos/onedrive-logo.jpg'); height:76px; width:234px; margin:100px"/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#FFD04B; min-height:300px">
-                <button id="google-picker-btn" onclick="getPicker()" type="button" class="btn btn-default" style="background-image:url('logos/google-drive-logo.jpg'); height:80px; width:234px; margin:100px"/>
+                <button id="google-picker-btn" onclick="pickerBtnPressed()" type="button" class="btn btn-default" 
+                    style="background-image:url('logos/google-drive-logo.jpg'); height:80px; width:234px; margin:100px"/>
                 <div id="result"></div>  
             </div>
-        </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center" style="background-color:#0281DC; min-height:300px">
+                <button id="google-picker-btn" onclick="getPicker()" type="button" class="btn btn-default" 
+                    style="background-image:url('logos/dropbox-logo.jpg'); height:80px; width:234px; margin:100px"/> 
+            </div>
+        </div> 
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
