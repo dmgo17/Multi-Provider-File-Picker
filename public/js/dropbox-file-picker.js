@@ -16,7 +16,7 @@ function dropboxBtnClicked(){
         // Optional. Called when the user closes the dialog without selecting a file
         // and does not include any parameters.
         cancel: function() {
-
+          
         },
 
         // Optional. "preview" (default) is a preview link to the document for sharing,

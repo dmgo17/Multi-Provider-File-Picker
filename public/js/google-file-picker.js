@@ -1,16 +1,10 @@
-// 
-// // The Browser API key obtained from the Google Developers Console.
-// var developerKey = 'Enter your Key here';
-// 
-// // The Client ID obtained from the Google Developers Console. Replace with your own Client ID.
-// var clientId = "Enter your Client ID here"
-   
-   // The Browser API key obtained from the Google Developers Console.
-var developerKey = 'AIzaSyDZwSBcCbw_0NapdF0GBw6yiDFg2FK1Mbo';
+
+// The Browser API key obtained from the Google Developers Console.
+var developerKey = 'Enter your Key here';
 
 // The Client ID obtained from the Google Developers Console. Replace with your own Client ID.
-var clientId = "293014167275-fl13isa0vgrm1bi223ivne9lkmmupbko.apps.googleusercontent.com"
-   
+var clientId = "Enter your Client ID here"
+     
 // Scope to use to access user's photos.
 var scope = ['https://www.googleapis.com/auth/photos'];
 
